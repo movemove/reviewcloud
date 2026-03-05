@@ -1,0 +1,250 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="ReviewCloud - Best Tech Reviews & Deals">
+  <main>
+    <section class="hero">
+      <h1>Best Tech Reviews & Deals</h1>
+      <p>Your trusted source for unbiased tech product reviews, buying guides, and exclusive deals.</p>
+    </section>
+
+    <section class="categories">
+      <h2>Popular Categories</h2>
+      <div class="category-grid">
+        <a href="/category/apple" class="category-card">
+          <span class="icon">🍎</span>
+          <h3>Apple</h3>
+          <p>iPhone, Mac, iPad, Watch</p>
+        </a>
+        <a href="/category/samsung" class="category-card">
+          <span class="icon">📱</span>
+          <h3>Samsung</h3>
+          <p>Galaxy, Fold, Buds</p>
+        </a>
+        <a href="/category/laptops" class="category-card">
+          <span class="icon">💻</span>
+          <h3>Laptops</h3>
+          <p>MacBook, Windows, Gaming</p>
+        </a>
+        <a href="/category/audio" class="category-card">
+          <span class="icon">🎧</span>
+          <h3>Audio</h3>
+          <p>Headphones, Earbuds, Speakers</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="latest-posts">
+      <h2>Latest Reviews</h2>
+      <div class="posts-grid">
+        <article class="post-card">
+          <div class="post-image">📱</div>
+          <div class="post-content">
+            <span class="category">Apple</span>
+            <h3><a href="/reviews/iphone-16-pro-review">iPhone 16 Pro Review: Is It Worth the Upgrade?</a></h3>
+            <p>The iPhone 16 Pro brings advanced camera upgrades, a new A18 Pro chip, and improved battery life...</p>
+            <span class="read-more">Read Review →</span>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-image">💻</div>
+          <div class="post-content">
+            <span class="category">Laptops</span>
+            <h3><a href="/reviews/macbook-air-m4-review">MacBook Air M4 Review: Perfect for Most Users</a></h3>
+            <p>Apple's latest MacBook Air delivers incredible performance with the M4 chip at an affordable price...</p>
+            <span class="read-more">Read Review →</span>
+          </div>
+        </article>
+        <article class="post-card">
+          <div class="post-image">🎧</div>
+          <div class="post-content">
+            <span class="category">Audio</span>
+            <h3><a href="/reviews/airpods-pro-3-review">AirPods Pro 3 Review: The Best Earbuds for iPhone?</a></h3>
+            <p>With improved noise cancellation and better battery life, the AirPods Pro 3 sets a new standard...</p>
+            <span class="read-more">Read Review →</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="deals">
+      <h2>🔥 Best Deals</h2>
+      <p>Check back soon for exclusive Amazon deals!</p>
+    </section>
+
+    <section class="newsletter">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to get the latest reviews and deals delivered to your inbox.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .category-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  .category-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .category-card .icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .category-card h3 {
+    margin: 0.5rem 0;
+  }
+
+  .category-card p {
+    color: #666;
+    margin: 0;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .post-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .post-image {
+    height: 180px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+  }
+
+  .post-content {
+    padding: 1.5rem;
+  }
+
+  .post-content .category {
+    background: #667eea;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+  }
+
+  .post-content h3 {
+    margin: 1rem 0 0.5rem;
+  }
+
+  .post-content h3 a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .post-content p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    color: #667eea;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .deals, .newsletter {
+    text-align: center;
+    padding: 3rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+  }
+
+  .subscribe-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .subscribe-form input {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 300px;
+  }
+
+  .subscribe-form button {
+    padding: 0.75rem 2rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .subscribe-form button:hover {
+    background: #5568d3;
+  }
+</style>
