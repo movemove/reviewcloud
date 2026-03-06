@@ -40,29 +40,81 @@ import Layout from '../layouts/Layout.astro';
       <h2>Latest Reviews</h2>
       <div class="posts-grid">
         <article class="post-card">
-          <div class="post-image">📱</div>
+          <div class="post-image">🎭</div>
           <div class="post-content">
-            <span class="category">Apple</span>
-            <h3><a href="/reviews/iphone-16-pro-review">iPhone 16 Pro Review: Is It Worth the Upgrade?</a></h3>
-            <p>The iPhone 16 Pro brings advanced camera upgrades, a new A18 Pro chip, and improved battery life...</p>
+            <span class="category">News</span>
+            <h3><a href="/reviews/apple-sydney-opera-house">Apple Partners with Sydney Opera House</a></h3>
+            <p>Yearlong collaboration to inspire Australian creativity.</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-image">🏷️</div>
+          <div class="post-content">
+            <span class="category">Accessories</span>
+            <h3><a href="/reviews/airtag-2-review">AirTag 2 Review: Longer Range</a></h3>
+            <p>Apple's new AirTag 2 brings improved tracking and louder sound.</p>
             <span class="read-more">Read Review →</span>
           </div>
         </article>
+
+        <article class="post-card">
+          <div class="post-image">📲</div>
+          <div class="post-content">
+            <span class="category">Software</span>
+            <h3><a href="/reviews/ios-26-4-features">iOS 26.4 Features: AI & More</a></h3>
+            <p>AI playlists, video podcasts, RCS encryption - what's new!</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-image">🚀</div>
+          <div class="post-content">
+            <span class="category">Laptops</span>
+            <h3><a href="/reviews/m5-max-macbook-pro-review">M5 Max MacBook Pro: Fastest Apple Chip</a></h3>
+            <p>29,233 multi-core! The new M5 Max sets all-time records.</p>
+            <span class="read-more">Read Review →</span>
+          </div>
+        </article>
+
         <article class="post-card">
           <div class="post-image">💻</div>
           <div class="post-content">
             <span class="category">Laptops</span>
-            <h3><a href="/reviews/macbook-air-m4-review">MacBook Air M4 Review: Perfect for Most Users</a></h3>
-            <p>Apple's latest MacBook Air delivers incredible performance with the M4 chip at an affordable price...</p>
+            <h3><a href="/reviews/macbook-neo-review">MacBook Neo Review: $599 Apple Laptop</a></h3>
+            <p>Apple's most affordable laptop ever. Is it worth buying?</p>
             <span class="read-more">Read Review →</span>
           </div>
         </article>
+
+        <article class="post-card">
+          <div class="post-image">📱</div>
+          <div class="post-content">
+            <span class="category">Apple</span>
+            <h3><a href="/reviews/iphone-16-pro-review">iPhone 16 Pro Review: Is It Worth Upgrading?</a></h3>
+            <p>The iPhone 16 Pro brings advanced camera upgrades...</p>
+            <span class="read-more">Read Review →</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-image">💻</div>
+          <div class="post-content">
+            <span class="category">Laptops</span>
+            <h3><a href="#">MacBook Air M4 Review: Perfect for Most Users</a></h3>
+            <p>Apple's latest MacBook Air delivers incredible performance...</p>
+            <span class="read-more">Read Review →</span>
+          </div>
+        </article>
+
         <article class="post-card">
           <div class="post-image">🎧</div>
           <div class="post-content">
             <span class="category">Audio</span>
-            <h3><a href="/reviews/airpods-pro-3-review">AirPods Pro 3 Review: The Best Earbuds for iPhone?</a></h3>
-            <p>With improved noise cancellation and better battery life, the AirPods Pro 3 sets a new standard...</p>
+            <h3><a href="#">AirPods Pro 3 Review: The Best Earbuds for iPhone?</a></h3>
+            <p>With improved noise cancellation and better battery life...</p>
             <span class="read-more">Read Review →</span>
           </div>
         </article>
@@ -246,5 +298,15 @@ import Layout from '../layouts/Layout.astro';
 
   .subscribe-form button:hover {
     background: #5568d3;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .posts-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
