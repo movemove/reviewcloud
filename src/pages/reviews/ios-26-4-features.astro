@@ -1,0 +1,71 @@
+---
+// src/pages/reviews/ios-26-4-features.astro
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="iOS 26.4 Features - Apple Intelligence & More">
+  <article class="review">
+    <header class="review-header">
+      <span class="category">Software</span>
+      <h1>iOS 26.4 Features: Apple Intelligence Gets Smarter</h1>
+      <div class="meta">
+        <span>By ReviewCloud Team</span>
+        <span>•</span>
+        <span>March 6, 2026</span>
+      </div>
+    </header>
+
+    <div class="toc">
+      <h2>What's New in iOS 26.4</h2>
+      <ul>
+        <li><a href="#music">Apple Music AI Playlist</a></li>
+        <li><a href="#podcasts">Video Podcasts</a></li>
+        <li><a href="#rcs">RCS Encryption</a></li>
+        <li><a href="#security">Stolen Device Protection</a></li>
+      </ul>
+    </div>
+
+    <section id="music">
+      <h2>🎵 Apple Music AI Playlist</h2>
+      <p>iOS 26.4 introduces <strong>Playlist Playground</strong>, an AI-powered feature that generates custom playlists based on your mood, activity, or any text prompt.</p>
+      <p>Simply type "workout music" or "chill Sunday morning" and Apple Music will create a personalized playlist for you.</p>
+    </section>
+
+    <section id="podcasts">
+      <h2>🎙️ Video Podcasts</h2>
+      <p>Apple Podcasts now supports native video podcasting. Create, distribute, and monetize video podcast content directly through the Podcasts app.</p>
+    </section>
+
+    <section id="rcs">
+      <h2>🔒 RCS Encryption</h2>
+      <p>Apple is testing end-to-end encryption for RCS messages, bringing secure texting between iPhone and Android users closer to reality.</p>
+    </section>
+
+    <section id="security">
+      <h2>🛡️ Enhanced Security</h2>
+      <ul>
+        <li><strong>Stolen Device Protection</strong> is now enabled by default</li>
+        <li>New ambient music widget</li>
+        <li>Improved bedtime metrics in the Sleep app</li>
+      </ul>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .review { max-width: 800px; margin: 0 auto; padding: 2rem; background: white; }
+  .review-header { text-align: center; margin-bottom: 2rem; }
+  .category { background: #667eea; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem; }
+  .review-header h1 { font-size: 2rem; margin: 1rem 0; }
+  .meta { color: #666; display: flex; gap: 0.5rem; justify-content: center; }
+  .toc { background: #f8f9fa; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; }
+  .toc h2 { font-size: 1.25rem; margin-bottom: 1rem; }
+  .toc ul { list-style: none; }
+  .toc li { padding: 0.5rem 0; border-bottom: 1px solid #eee; }
+  .toc a { color: #667eea; text-decoration: none; }
+  section { margin-bottom: 2.5rem; }
+  section h2 { font-size: 1.5rem; margin-bottom: 1rem; color: #333; }
+  section p { color: #555; line-height: 1.8; margin-bottom: 1rem; }
+  ul { margin: 1rem 0; padding-left: 1.5rem; }
+  li { margin: 0.5rem 0; color: #555; }
+</style>
