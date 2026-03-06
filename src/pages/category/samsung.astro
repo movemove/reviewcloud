@@ -1,49 +1,22 @@
 ---
-// src/pages/category/apple.astro
+// src/pages/category/samsung.astro
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Apple Products Reviews - Best Apple Deals">
+<Layout title="Samsung Products Reviews - Best Samsung Deals">
   <main>
     <header class="category-header">
-      <h1>🍎 Apple Products Reviews</h1>
-      <p>Latest reviews, buying guides, and deals on iPhone, Mac, iPad, Apple Watch, and more.</p>
+      <h1>📱 Samsung Products Reviews</h1>
+      <p>Latest reviews on Samsung Galaxy phones, laptops, tablets, and accessories.</p>
     </header>
 
     <div class="posts-grid">
       <article class="post-card">
         <div class="post-image">📱</div>
         <div class="post-content">
-          <span class="category">iPhone</span>
-          <h3><a href="/reviews/iphone-16-pro-review">iPhone 16 Pro Review: Is It Worth Upgrading?</a></h3>
-          <p>Our in-depth review of Apple's latest flagship smartphone.</p>
-        </div>
-      </article>
-      
-      <article class="post-card">
-        <div class="post-image">💻</div>
-        <div class="post-content">
-          <span class="category">Mac</span>
-          <h3><a href="#">MacBook Air M4 Review: Perfect for Most Users</a></h3>
-          <p>Is the new MacBook Air with M4 chip right for you?</p>
-        </div>
-      </article>
-      
-      <article class="post-card">
-        <div class="post-image">🎧</div>
-        <div class="post-content">
-          <span class="category">Audio</span>
-          <h3><a href="#">AirPods Pro 3 Review: Best Earbuds for iPhone?</a></h3>
-          <p>The next generation of AirPods Pro is here.</p>
-        </div>
-      </article>
-      
-      <article class="post-card">
-        <div class="post-image">⌚</div>
-        <div class="post-content">
-          <span class="category">Watch</span>
-          <h3><a href="#">Apple Watch Series 10 Review</a></h3>
-          <p>Our complete review of the latest Apple Watch.</p>
+          <span class="category">Samsung</span>
+          <h3><a href="/reviews/galaxy-s26-review">Samsung Galaxy S26 Review</a></h3>
+          <p>Samsung's latest flagship phone - first look and impressions.</p>
         </div>
       </article>
     </div>
@@ -51,72 +24,16 @@ import Layout from '../../layouts/Layout.astro';
 </Layout>
 
 <style>
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-
-  .category-header {
-    text-align: center;
-    padding: 3rem 0;
-  }
-
-  .category-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .category-header p {
-    color: #666;
-    font-size: 1.25rem;
-  }
-
-  .posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-
-  .post-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-
-  .post-image {
-    height: 180px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-  }
-
-  .post-content {
-    padding: 1.5rem;
-  }
-
-  .post-content .category {
-    background: #667eea;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-  }
-
-  .post-content h3 {
-    margin: 1rem 0 0.5rem;
-  }
-
-  .post-content h3 a {
-    color: #333;
-    text-decoration: none;
-  }
-
-  .post-content p {
-    color: #666;
-    font-size: 0.9rem;
-  }
+  main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+  .category-header { text-align: center; padding: 3rem 0; }
+  .category-header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+  .category-header p { color: #666; font-size: 1.25rem; }
+  .posts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+  .post-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  .post-image { height: 180px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+  .post-content { padding: 1.5rem; }
+  .post-content .category { background: #667eea; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; }
+  .post-content h3 { margin: 1rem 0 0.5rem; }
+  .post-content h3 a { color: #333; text-decoration: none; }
+  .post-content p { color: #666; font-size: 0.9rem; }
 </style>
